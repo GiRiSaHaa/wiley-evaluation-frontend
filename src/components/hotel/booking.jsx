@@ -136,6 +136,7 @@ class Booking extends Component {
                               <Form.Group as={Col} controlId="formGridEmail">
                                 <Form.Label>Check-in Date</Form.Label>
                                 <Form.Control
+                                  required
                                   name="checkin"
                                   type="date"
                                   onChange={this.bookingChange}
@@ -145,6 +146,7 @@ class Booking extends Component {
                               <Form.Group as={Col} controlId="formGridPassword">
                                 <Form.Label>Check-out Date</Form.Label>
                                 <Form.Control
+                                  required
                                   name="checkout"
                                   type="date"
                                   onChange={this.bookingChange}
@@ -156,6 +158,7 @@ class Booking extends Component {
                                 <Form.Group as={Col}>
                                   <Form.Label>Rooms</Form.Label>
                                   <Form.Control
+                                    required
                                     name="rooms"
                                     type="number"
                                     value={this.state.rooms}
@@ -167,6 +170,7 @@ class Booking extends Component {
                                 <Form.Group as={Col}>
                                   <Form.Label>Adults</Form.Label>
                                   <Form.Control
+                                    required
                                     name="adults"
                                     type="number"
                                     value={this.state.adults}
@@ -178,6 +182,7 @@ class Booking extends Component {
                                 <Form.Group as={Col}>
                                   <Form.Label>Children</Form.Label>
                                   <Form.Control
+                                            requiredgit 
                                     type="number"
                                     name="children"
                                     value={this.state.children}
